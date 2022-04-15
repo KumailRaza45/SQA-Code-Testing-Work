@@ -1,1 +1,5 @@
-
+Open the virtual box and open the kaali linux and metasploit-2 on the virtual box if they are already install in it and if no then first install both the virtual machines.
+Before opening the both machine you have to make some changes in the Virtual machine settings.
+Go to the setting and click on the network adapter setting and change it from NAT to bridge option which says connect it directly to the physical network  for the both machines. We do this because if the netwrok of the both machine will be NAT they will have same IP address and we will have difficulty in interacting both of them.
+After doing the settings open both of the machines and enter the username and password.The useername and password for kali linx will be kali and for metasploit will be msfadmin.
+Then we use ipconfgig command to see that is the IP address is assigned or not
