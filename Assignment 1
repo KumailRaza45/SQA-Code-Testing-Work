@@ -19,3 +19,12 @@ Then write sqlmap -r location  --dbs, command to sepcify the request and the --d
 After pressing enter it will start enumerating and we will see different injections points and you will have different option and if we use one of them it will fetch the different databases.
 If we want to see what tables are present in the database we will use the sqlmap -r location --D databasename --tables.
 The tables data will be fetch once you press enter.
+The Fetch data is as under:
+Database Name: owasp10
+[6 tables]
+accounts
+blog_table
+captured_data
+credit_cards
+hit_log
+pen_test_tool
