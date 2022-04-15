@@ -1,0 +1,30 @@
+•	Open the virtual box and open the kaali linux and metasploit-2 on the virtual box if they are already install in it and if no then first install both the virtual machines.
+•	Before opening the both machine you have to make some changes in the Virtual machine settings.
+•	Go to the setting and click on the network adapter setting and change it from NAT to bridge option which says connect it directly to the physical network  for the both machines. We do this because if the netwrok of the both machine will be NAT they will have same IP address and we will have difficulty in interacting both of them.
+•	After doing the settings open both of the machines and enter the username and password.The useername and password for kali linx will be kali and for metasploit will be msfadmin.
+•	Then we use ipconfgig command to see that is the IP address is assigned or not in metasploit-2 machine after that go back to Kali linux and check the IP address assign or not using same command then go back to metasploit-2 and assign IP address with in the same subnet location.Use command $sudo ifconfig netwrokname subnet netmask and click enter.
+•	Again right ipconfig command to check wether IP address is assign to metasploit-2 machine or not.
+•	Go back to kali linux and check if you are able to ping to metasploit-2 for that we use command ping IP address.
+•	If we want to access metasploit-2 from kali linux just enter the IP address in the browser of kali linux.
+•	After that we will land on the Metasploit-2 page which have lot of the application from which we will use Mutillidae.
+•	The Mutillidea will open and we have the OWASP TOP 10 which release 10 vulnerbilities that might be possible in an application from we will use injection and from which we will extract data using different tools that are present in kali linux.
+•	Click on the user info option that will take us to login page.
+•	After that we will use burpsuite a tool of kali linux that is used to capture request that we use  in sql map to enumarte database to check the vulnerbilities present in an application.
+•	Open the burpsuite and there will be lots of option but we will only use the proxy option and check for the intercept and make sure it is on.
+•	Change the setting of the browser to manually proxy configuration and check the IP address and port number are given right or not.
+•	Go back to login page by using some random name and password and go back to burpsuite and see does it have capture the request or not if not kept trying with other name and password. Once the request is capture save it.
+•	Open the Sql map tool in kali linux which store in it by default.
+•	Open the terminal in kali linux and write sqlmap command.
+•	Then write sqlmap -r location  --dbs, command to sepcify the request and the --dbs is used to enumerates and check if there is any vulnerbilites.
+•	After pressing enter it will start enumerating and we will see different injections points and you will have different option and if we use one of them it will fetch the different databases.
+•	If we want to see what tables are present in the database we will use the sqlmap -r location --D databasename --tables.
+•	The tables data will be fetch once you press enter.
+•	The Fetch data is as under:
+Database Name: owasp10
+[6 tables]
+accounts
+blog_table
+captured_data
+credit_cards
+hit_log
+pen_test_tool
