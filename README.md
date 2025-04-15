@@ -28,7 +28,3 @@ This repo serves as a personal archive and demonstration of the work done during
 ## 📜 License
 
 This project is for educational purposes only.
-
----
-
-Let me know the assignment titles (or upload them), and I can fill in those placeholders for you too!
